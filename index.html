@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripy</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/autoComplete.css">
+    <link rel="stylesheet" href="./js/slider.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <div class="modal-wrapper hidden">
+        <article class="article" data-aos="fade-up">
+            <form action="" class="form__modal">
+                <a href="#!" class="close">
+                    <img src="./img/cross.png" alt="">
+                </a>
+                <div class="form__header">
+                    <h2 class="form__title">Contact us</h2>
+                    <div class="form__block">
+                        <a href="#!" data-name="signIn" class="form__link">Sign in</a>
+                        <a href="#!" class="form__link form__link--active">Sign up</a>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="int__block">
+                        <input type="email" class="modal__int" placeholder="Enter your email">
+                        <input type="password" class="modal__int" placeholder="Enter your password">
+                    </div>
+                    <a href="#!" class="forget__pswrd">Forget password?</a>
+                    <button type="button" class="modal__btn">Send</button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a href="#!">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#!" class="nav__link--active nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#!" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#!" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#!" class="nav__link">Price</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#!" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-contacts">
+                    <h3>Login</h3>
+                    <button type="button" class="contacts__btn">Register</button>
+                </div>
+                <button class="mobile-nav-btn">
+                    <div class="nav-icon"></div>
+                </button>
+            </nav>
+            <div class="header-text">
+                <div class="header-text__desc" data-aos="fade-down-right" data-aos-duration="1000">
+                    <h1 class="header-text__title">Dare to live the life<br> you've always<br> wanted.</h1>
+                    <p class="header-text__text">Life is short and the world is wide. So, better<br> get started.</p>
+                    <form action="" class="form">
+                        <label for="" class="form__label ">
+                            <span>Location</span>
+                            <input id="autoComplete" name="country" type="search" class="form__input"
+                                placeholder="Allentown, New Mexico" autocomplete="off" autocapitalize="off">
+                        </label>
+                        <div class="form__devider"></div>
+                        <label for="" class="form__label form__label--data">
+                            <span>Date</span>
+                            <input id="datepicker" name="date" type="text" class="form__input"
+                                placeholder="04 Aug, 2022" autocomplete="off">
+                        </label>
+                        <button class="form__btn">
+                            <img src="./img/search.svg" alt="Search">
+                        </button>
+                    </form>
+                </div>
+                <img data-aos="fade-down-left" data-aos-duration="1000" src="./img/header-img.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav-fade">
+    </div>
+    <div class="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Price</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <div class="mobile-nav-contacts">
+                <h3>Login</h3>
+                <button type="button" class="contacts__btn">Register</button>
+            </div>
+        </ul>
+    </div>
+    <main class="main">
+        <section class="section" data-aos="flip-up" data-aos-duration="700">
+            <div class="container">
+                <div class="about">
+                    <img src="./img/about-img.jpg" alt="">
+                    <div class="about-desc">
+                        <div class="">
+                            <span class="about__span">About us</span>
+                            <h2 class="title-1">Our tour plan is to<br>fulfil your dream wish</h2>
+                        </div>
+                        <p class="text-1">Understand to achieve anything requires faith and<br> belief in yourself,
+                            vision, hard work, determination,<br> and dedication.</p>
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <h3 class="about__title">15</h3>
+                                <p class="about__text">Years of<br> Experience</p>
+                            </li>
+                            <li class="about__item">
+                                <h3 class="about__title">1k</h3>
+                                <p class="about__text">Sucessful<br>
+                                    Trips</p>
+                            </li>
+                            <li class="about__item">
+                                <h3 class="about__title">20k</h3>
+                                <p class="about__text">Happy<br>
+                                    Customers</p>
+                            </li>
+                            <li class="about__item">
+                                <h3 class="about__title">4.9</h3>
+                                <p class="about__text">Overall<br>
+                                    Rating</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" data-aos="flip-right" data-aos-duration="700">
+            <div class="packages">
+                <div class="">
+                    <div class="container">
+                        <div class="packages-header">
+                            <div class="packages__desc">
+                                <span class="about__span">Tour Packages</span>
+                                <h2 class="title-1">The amazing places around<br> the world</h2>
+                            </div>
+                            <div class="navigation">
+                                <a href="#!" id="prev">
+                                    <img src="./img/Arrow left.svg" alt="">
+                                </a>
+                                <a href="#!" id="next">
+                                    <img src="./img/Arrow right.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container--right none">
+            <div class="row-wrapper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row__item">
+                                <img src="./img/img-01.jpg" alt="">
+                                <div class="row__desc">
+                                    <h3 class="row__title">Fall in love among the winding<br> streets and
+                                        snow-covered
+                                    </h3>
+                                    <span class="row-location">Prague, Czechia</span>
+                                    <div class="mark">
+                                        <img src="./img/magic-star.svg" alt="">
+                                        <h4 class="mark__title">4.9</h4>
+                                    </div>
+                                    <div class="row-footer">
+                                        <h3 class="row__price">$200</h3>
+                                        <p class="row__length">10 days tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row__item">
+                                <img src="./img/img-02.jpg" alt="">
+                                <div class="row__desc">
+                                    <h3 class="row__title">History is not about the past but a<br> map of the
+                                        past
+                                    </h3>
+                                    <span class="row-location">Beijing, China</span>
+                                    <div class="mark">
+                                        <img src="./img/magic-star.svg" alt="">
+                                        <h4 class="mark__title">4.9</h4>
+                                    </div>
+                                    <div class="row-footer">
+                                        <h3 class="row__price">$450</h3>
+                                        <p class="row__length">5 days tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row__item">
+                                <img src="./img/img-03.jpg" alt="">
+                                <div class="row__desc">
+                                    <h3 class="row__title">The unique character as a symbol of<br> taste and
+                                        ostentation
+                                    </h3>
+                                    <span class="row-location">İstanbul, Turkey</span>
+                                    <div class="mark">
+                                        <img src="./img/magic-star.svg" alt="">
+                                        <h4 class="mark__title">4.9</h4>
+                                    </div>
+                                    <div class="row-footer">
+                                        <h3 class="row__price">$150</h3>
+                                        <p class="row__length">7 days tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row__item">
+                                <img src="./img/img-04.jpg" alt="">
+                                <div class="row__desc">
+                                    <h3 class="row__title">You don't want to pitch a tent and live inside the
+                                        Louvre
+                                    </h3>
+                                    <span class="row-location">Paris, France</span>
+                                    <div class="mark">
+                                        <img src="./img/magic-star.svg" alt="">
+                                        <h4 class="mark__title">4.9</h4>
+                                    </div>
+                                    <div class="row-footer">
+                                        <h3 class="row__price">$100</h3>
+                                        <p class="row__length">10 days tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container--right vert">
+            <div class="row-wrapper">
+                <div class="row__item">
+                    <img src="./img/img-01.jpg" alt="">
+                    <div class="row__desc">
+                        <h3 class="row__title">Fall in love among the winding<br> streets and
+                            snow-covered
+                        </h3>
+                        <span class="row-location">Prague, Czechia</span>
+                        <div class="mark">
+                            <img src="./img/magic-star.svg" alt="">
+                            <h4 class="mark__title">4.9</h4>
+                        </div>
+                        <div class="row-footer">
+                            <h3 class="row__price">$200</h3>
+                            <p class="row__length">10 days tour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row__item">
+                    <img src="./img/img-02.jpg" alt="">
+                    <div class="row__desc">
+                        <h3 class="row__title">History is not about the past but a<br> map of the
+                            past
+                        </h3>
+                        <span class="row-location">Beijing, China</span>
+                        <div class="mark">
+                            <img src="./img/magic-star.svg" alt="">
+                            <h4 class="mark__title">4.9</h4>
+                        </div>
+                        <div class="row-footer">
+                            <h3 class="row__price">$450</h3>
+                            <p class="row__length">5 days tour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row__item">
+                    <img src="./img/img-03.jpg" alt="">
+                    <div class="row__desc">
+                        <h3 class="row__title">The unique character as a symbol of<br> taste and
+                            ostentation
+                        </h3>
+                        <span class="row-location">İstanbul, Turkey</span>
+                        <div class="mark">
+                            <img src="./img/magic-star.svg" alt="">
+                            <h4 class="mark__title">4.9</h4>
+                        </div>
+                        <div class="row-footer">
+                            <h3 class="row__price">$150</h3>
+                            <p class="row__length">7 days tour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row__item">
+                    <img src="./img/img-04.jpg" alt="">
+                    <div class="row__desc">
+                        <h3 class="row__title">You don't want to pitch a tent and live inside the
+                            Louvre
+                        </h3>
+                        <span class="row-location">Paris, France</span>
+                        <div class="mark">
+                            <img src="./img/magic-star.svg" alt="">
+                            <h4 class="mark__title">4.9</h4>
+                        </div>
+                        <div class="row-footer">
+                            <h3 class="row__price">$100</h3>
+                            <p class="row__length">10 days tour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <section class="section" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="heading__text">
+                        <div class="">
+                            <span class="about__span">Testimonial</span>
+                            <h2 class="title-1">Satisfied travellers around<br> the world</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <a href="#!">
+                        <img src="./img/Arrow left.svg" alt="">
+                    </a>
+                    <div class="slide">
+                        <div class="slide__item">
+                            <div class="slide__desc slide__header">
+                                <img src="./img/artist-1.jpg" alt="">
+                                <div class="personal-information">
+                                    <h4 class="slide__title">Eleanor Pena</h4>
+                                    <span class="artist__desc">UI/UX Designer</span>
+                                    <div class="artist__mark">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="slide__text">Customer testimonials are more<br> effective than paid marketing
+                                    copy<br> as
+                                    they take the spotlight away from<br> the seller to
+                                    shine it on<br> the customers.</p>
+                            </div>
+                        </div>
+                        <div class="slide__item">
+                            <div class="slide__desc slide__header">
+                                <img src="./img/artist-2.jpg" alt="">
+                                <div class="personal-information">
+                                    <h4 class="slide__title">Theresa Webb</h4>
+                                    <span class="artist__desc">Vlogger</span>
+                                    <div class="artist__mark">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="slide__text">In promotion and advertising, a<br> testimonial or show consists
+                                    of a<br> person's written statement extolling<br> the virtue of a
+                                    product.</p>
+                            </div>
+                        </div>
+                        <div class="slide__item">
+                            <div class="slide__desc slide__header">
+                                <img src="./img/artist-3.jpg" alt="">
+                                <div class="personal-information">
+                                    <h4 class="slide__title">Annette Black</h4>
+                                    <span class="artist__desc">Doctor</span>
+                                    <div class="artist__mark">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                        <img src="./img/star-point.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="slide__text">Testimonials work because they<br> aren''t strong sales pitches,
+                                    they<br> come across in an unbiased voice<br> and establish trust</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#!">
+                        <img src="./img/Arrow right.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="heading__text">
+                        <h2 class="title-1">We can do anything we want to<br> if we stick to it long enough.</h2>
+                        <p class="text-1">Do what you can, with what you have, where you are.</p>
+                        <button class="btn-1">See all tours</button>
+                    </div>
+                </div>
+                <div class="tuors">
+                    <div class="tuors__card">
+                        <img src="./img/card-01.jpg" alt="">
+                        <h3>Porto, Portugal</h3>
+                        <div class="cost">
+                            <h4 class="cost__title">$150</h4>
+                            <p class="const__text">7 days tour</p>
+                        </div>
+                    </div>
+                    <div class="mini-tour">
+                        <div class="mini-card">
+                            <img src="./img/mini-card-02.jpg" alt="">
+                            <h3>Paris, France</h3>
+                            <div class="cost">
+                                <h4 class="cost__title--mini">$150</h4>
+                                <p class="const__text--mini">7 days tour</p>
+                            </div>
+                        </div>
+                        <div class="mini-card">
+                            <img src="./img/mini-card-01.jpg" alt="">
+                            <h3>Paris, France</h3>
+                            <div class="cost">
+                                <h4 class="cost__title--mini">$250</h4>
+                                <p class="const__text--mini">6 days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tuors__card">
+                        <img src="./img/card-02.jpg" alt="">
+                        <h3>Amsterdam, Netherland</h3>
+                        <div class="cost">
+                            <h4 class="cost__title">$150</h4>
+                            <p class="const__text">10 days tour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#!">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <p class="footer__text">4517 Washington Ave.<br> Manchester, Kentucky 39495</p>
+                    <div class="contacts-icon">
+                        <a href="#!">
+                            <img src="./img/facebook.svg" alt="">
+                        </a>
+                        <a href="#!">
+                            <img src="./img/instagram.svg" alt="">
+                        </a>
+                        <a href="#!">
+                            <img src="./img/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list__wrapper">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <h3 class="footer__title">About</h3>
+                        </li>
+                        <li class="footer__item">About us</li>
+                        <li class="footer__item">Features</li>
+                        <li class="footer__item">News</li>
+                        <li class="footer__item">Plans</li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <h3 class="footer__title">Company</h3>
+                        </li>
+                        <li class="footer__item">Why Tripy</li>
+                        <li class="footer__item">Partner with us</li>
+                        <li class="footer__item">FAQ</li>
+                        <li class="footer__item">Blog</li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <h3 class="footer__title">Support</h3>
+                        </li>
+                        <li class="footer__item">Account</li>
+                        <li class="footer__item">Support center</li>
+                        <li class="footer__item">Feedback</li>
+                        <li class="footer__item">Contact us</li>
+                    </ul>
+                    <form action="" class="footer__form">
+                        <h3 class="footer__title">Newsletter</h3>
+                        <p class="footer__item">Subscribe our newsletter and get<br> exciting offers</p>
+                        <div class="input-wrapper">
+                            <input class="footer__int" type="email" placeholder="Enter your email address">
+                            <button class="footer__btn">
+                                <img src="./img/send-icon.svg" alt="">
+                            </button>
+                        </div>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tarekraafat-autocomplete.js/10.2.7/autoComplete.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.umd.min.js"></script>
+    <script src="./js/slider.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
